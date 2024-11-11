@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>p5js week 8 assignment</title>
+        <meta name="description" content="p5js week 8 assignment">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <span>p5js Assignment 8</span>
+            <span id="myName">Mac Sanmiguel</span>
+        </header>
+        <main>
+            <article>
+                <span id="littleTitle">My final project idea:</span><br>
+                For my final project, I want to make a web app that can be accessed through the internet on a computer or touch screen device <span class="whisperText">(i.e. a phone or tablet).</span> This app will be a combintation of a digital art canvas and musical instrument. I plan to accomplish this by using the p5.js framework, utilizing the p5.sound library <span class="whisperText">(which is missing from the new documentation page for some reason)</span> and potentially utilizing the tone.js framework.<br>
+                <span id="littleTitle2">What will the app do?</span><br>
+                In terms of the user interface, I created a little sketch you can see on the right on what it will roughly look like. There is a large main area aka the <span id="canvasText">"canvas"</span> that the user will be able to interact with. There are two modes that the canvas can be interacted with, being <span class="drawMode">draw mode</span> and <span class="synthMode">synth mode</span>. In draw mode, the user can choose from a selection of colors, brush size, and opacity in the "pallate" and draw on the canvas area using the mouse <span class="whisperText">(or finger.)</span> Once the user is satisfied with what they have created, they can switch into synth mode. In synth mode, the user is now able to use the mouse to hover over and click on the canvas, but instead of drawing, what had previously been drawn on the canvas will be used as an input to generate music as the user interacts with the page.<br>
+                <span id="littleTitle3">How will I do this?</span><br>
+                p5.js has a lot of very useful functions and variables that I will use to my advantage in creating this project. Most importantly, I will be using the mouseX and mouseY variables to easily track where the user is hovering the mouse, then a mouseClicked function to draw the "paint" on the page <span class="whisperText">(i will have to figure out how to make this touch responsive too.)</span> Additionally, I can use the distance function to determine which part of the pallate the user is interacting with. Getting the "drawing" effect working on my app will be easy, using the draw function and line function in tandem with the mouseX and Y parameters. In the synth mode, using "get" will allow me to detect what color is under the mouse cursor, which I can use to run different functions depending on the color the user is hovering over. There are also some base javascript elements like for loops, conditionals, and arrays will help me with other aspects of the app. Because the app will have a <span class="synthMode">synth</span> and a <span class="drawMode">draw</span> mode with different sets of interactions, it will be necessary to be able to switch between these modes. I plan on using a for loop and conditional statements to create two different "states" that can be switched between. Additionally, I will be able to create functions that can be put in conditional statement that can be called from when specific criteria are met <span class="whisperText">(like if the color under the mouse is red.)</span> I want to try and utilize object-oriented-programming as much as possible and creat functions with custom parameters, so I can make an app that is very unique and interactive.
+            </article>
+
+            <img id="midImg" src="jsFinalSketch.png" alt="my idea sketch" width="100%" height="100%">
+            <img id="rightTopImg" src="rightPic1.png" alt="cool picture" width="100%" height="100%">
+            <img id="rightBotImg" src="rightPic2.png" alt="cool picture" width="100%" height="100%">
+
+            <div id="buttonDiv">
+                <img src="css.png">
+                <a href="https://www.youtube.com/watch?v=2yJgwwDcgV8"><img src="nyan.gif"></a>
+                <a href="https://motherfuckingwebsite.com/"><img src="no.gif"></a>
+                <img src="wwwbutton.gif">
+            </div>
+        </main>
+            <script src="sketch.js" async defer></script>
+    </body>
+</html>

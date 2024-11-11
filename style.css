@@ -1,0 +1,91 @@
+html body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2vh;
+    height: 5vh;
+    overflow-x: hidden;
+}
+#myName{
+    float: inline-end;
+}
+
+main {
+    display: grid;
+    grid-template-columns:[col1] 5fr [col2] 8fr [col3] 4fr [end];
+    grid-template-rows:[row1] 1fr [row2] 1fr [row3] 1fr [end];
+    max-height: 91vh;
+}
+article {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    overflow-y: scroll;
+}
+#midImg {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: center;
+    height: 75%;
+}
+#rightTopImg {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+#rightBotImg {
+    grid-column: 3;
+    grid-row: 3;
+}
+#buttonDiv {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: end;
+    justify-self: start;
+    align-items: end;
+    justify-items: start;
+}
+#littleTitle {
+    letter-spacing: 5px;
+    text-shadow: 2px 2px red;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+#littleTitle2 {
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px blue;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+.whisperText {
+    opacity: 0.75;
+}
+#canvasText {
+    color: lightcoral;
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+.drawMode {
+    color: violet;
+    font-family: fantasy;
+}
+.synthMode {
+    color: cyan;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#littleTitle3 {
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 5px yellow;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-style: double;    
+}
